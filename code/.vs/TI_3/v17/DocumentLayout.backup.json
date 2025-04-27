@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\KostyaBetenya\\University\\4_term\\\u0422\u0418\\lab3\\ToI_3\\code\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{994350D6-01A1-4AF6-BB14-83CECB9934EC}|TI_3\\TI_3.csproj|c:\\kostyabetenya\\university\\4_term\\\u0442\u0438\\lab3\\toi_3\\code\\ti_3\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{994350D6-01A1-4AF6-BB14-83CECB9934EC}|TI_3\\TI_3.csproj|C:\\KostyaBetenya\\University\\4_term\\\u0422\u0418\\lab3\\ToI_3\\code\\ti_3\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{994350D6-01A1-4AF6-BB14-83CECB9934EC}|TI_3\\TI_3.csproj|solutionrelative:ti_3\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{994350D6-01A1-4AF6-BB14-83CECB9934EC}|TI_3\\TI_3.csproj|c:\\kostyabetenya\\university\\4_term\\\u0442\u0438\\lab3\\toi_3\\code\\ti_3\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{994350D6-01A1-4AF6-BB14-83CECB9934EC}|TI_3\\TI_3.csproj|C:\\KostyaBetenya\\University\\4_term\\\u0422\u0418\\lab3\\ToI_3\\code\\ti_3\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{994350D6-01A1-4AF6-BB14-83CECB9934EC}|TI_3\\TI_3.csproj|solutionrelative:ti_3\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{994350D6-01A1-4AF6-BB14-83CECB9934EC}|TI_3\\TI_3.csproj|C:\\KostyaBetenya\\University\\4_term\\\u0422\u0418\\lab3\\ToI_3\\code\\ti_3\\rsa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{994350D6-01A1-4AF6-BB14-83CECB9934EC}|TI_3\\TI_3.csproj|solutionrelative:ti_3\\rsa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,8 +22,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RSA.cs",
+              "DocumentMoniker": "C:\\KostyaBetenya\\University\\4_term\\\u0422\u0418\\lab3\\ToI_3\\code\\TI_3\\RSA.cs",
+              "RelativeDocumentMoniker": "TI_3\\RSA.cs",
+              "ToolTip": "C:\\KostyaBetenya\\University\\4_term\\\u0422\u0418\\lab3\\ToI_3\\code\\TI_3\\RSA.cs",
+              "RelativeToolTip": "TI_3\\RSA.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T09:26:50.741Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -28,7 +45,7 @@
               "RelativeDocumentMoniker": "TI_3\\MainForm.cs",
               "ToolTip": "C:\\KostyaBetenya\\University\\4_term\\\u0422\u0418\\lab3\\ToI_3\\code\\TI_3\\MainForm.cs",
               "RelativeToolTip": "TI_3\\MainForm.cs",
-              "ViewState": "AgIAAIIAAAAAAAAAAAAUwAcBAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAO8AAAAAAAAAAAAwwPcAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-27T09:23:55.728Z",
               "EditorCaption": ""

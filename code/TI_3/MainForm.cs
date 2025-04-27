@@ -37,13 +37,13 @@ public partial class MainForm : Form
 
         if (TextBoxP.Text.Length == 0)
         {
-            MessageBox.Show("Длина вашего P должна быть отлична от нуля!", "Внимание");
+            MessageBox.Show("Необходимо ввести P.", "Ошибка!");
             return;
         }
         
         if (TextBoxQ.Text.Length == 0)
         {
-            MessageBox.Show("Длина вашего Q должна быть отлична от нуля!", "Внимание");
+            MessageBox.Show("Необходимо ввести Q.", "Ошибка!");
             return;
         }
 
@@ -55,27 +55,27 @@ public partial class MainForm : Form
             IntegerP = int.Parse(TextBoxP.Text);
             if (!RSA.IsPrime(IntegerP))
             {
-                MessageBox.Show("Ваше число P не является простым!", "Внимание");
+                MessageBox.Show("Необходимо чтобы P было простым!", "Ошибка!");
                 return;
             }
 
             IntegerQ = int.Parse(TextBoxQ.Text);
             if (!RSA.IsPrime(IntegerQ))
             {
-                MessageBox.Show("Ваше число Q не является простым!", "Внимание");
+                MessageBox.Show("Необходимо чтобы Q было простым!", "Ошибка!");
                 return;
             }
         }
         catch
         {
-            MessageBox.Show("Проверьте диапазон чисел");
+            MessageBox.Show("Проверьте P и Q на корректность данных!", "Особая ошибка!");
             return;
         }
 
         IntegerR = IntegerQ * IntegerP;
         if (IntegerR is < 256 or > ushort.MaxValue)
         {
-            MessageBox.Show($"Ваше произведение P и Q должно быть не меньше 256 и не больше {ushort.MaxValue}!", "Внимание");
+            MessageBox.Show($"Произведение P и Q должно быть в диапазоне [{256}; {ushort.MaxValue}]!", "Ошибка!");
             return;
         }
         
@@ -85,21 +85,21 @@ public partial class MainForm : Form
 
         if (TextBoxD.Text.Length == 0)
         {
-            MessageBox.Show("Длина вашей закрытой константы D должна быть отлична от нуля!", "Внимание");
+            MessageBox.Show("Введите закрытую константу D!", "Ошибка!");
             return;
         }
         
         IntegerD = int.Parse(TextBoxD.Text);
         if (IntegerD <= 1 || IntegerD >= IntegerFunctionR)
         {
-            MessageBox.Show("Ваша закрытая константа D меньше 1 или больше функции эйлера!", "Внимание");
+            MessageBox.Show($"Ваша закрытая константа D должна быть в диапазоне [{1}, {IntegerFunctionR}]!", "Ошибка!");
             return;
         }
         
         int gcd = RSA.FindGcd(IntegerD, IntegerFunctionR);
         if (gcd != 1)
         {
-            MessageBox.Show("Ваша открытая константа E не взаимно простая с функцией Эйлера!", "Внимание");
+            MessageBox.Show("Открытая константа E не взаимно простая с функцией Эйлера!", "Ошибка!");
             return;
         }
 
@@ -138,7 +138,7 @@ public partial class MainForm : Form
         OpenFilePlain.Enabled = false;
         SaveFileCipher.Enabled = false;
         SaveFilePlain.Enabled = true;
-        ResultButton.Text = "Дешифровать";
+        ResultButton.Text = "Дешифрировать";
         PlainText.Clear();
     }
 
@@ -148,7 +148,7 @@ public partial class MainForm : Form
         {
             if (PlainText.Text.Length == 0)
             {
-                MessageBox.Show("Длина вашего исходного текста должна быть отлична от нуля. Попробуйте открыть файл!", "Внимание");
+                MessageBox.Show("Введите исходный текст. Попробуйте открыть файл!", "Ошибка!");
                 return;
             }
 
@@ -170,8 +170,8 @@ public partial class MainForm : Form
         {
             if (CipherText.Text.Length == 0)
             {
-                MessageBox.Show("Длина вашего зашифрованного текста должна быть отлична от нуля. Попробуйте открыть файл!",
-                    "Внимание");
+                MessageBox.Show("Введите зашифрованный текст. Попробуйте открыть файл!",
+                    "Ошибка!");
                 return;
             }
 
